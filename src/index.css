@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+/* Authentic Nokia / Early Handheld Dot-Matrix Font (Self-Hosted Local WOFF2 ~7-8kB) */
+@font-face {
+  font-family: 'Silkscreen';
+  src: url('/fonts/silkscreen-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Silkscreen';
+  src: url('/fonts/silkscreen-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-pixel: 'Silkscreen', ui-monospace, 'Consolas', 'SF Mono', monospace;
+}
+
+@layer base {
+  :root {
+    /* Vintage Hardware & Nostalgic Web Palette */
+    --bg-page: #f0ebe1;
+    --bg-surface: #fcfbfa;
+    --bg-card: #f7f4ed;
+    --bg-card-hover: #ffffff;
+    --chassis-frame: #e2ddd3;
+    --chassis-border: #1e2229;
+    --chassis-shadow: #1e2229;
+
+    /* Screen Tokens (Authentic Nokia 3310 Green LCD) */
+    --lcd-bg: #879571;
+    --lcd-pixel: #142410;
+    --lcd-dim: #73805f;
+
+    /* Keypad Molded Vintage Hardware */
+    --key-face: #ded9cd;
+    --key-hover: #e8e3d7;
+    --key-active: #cfc9bb;
+    --key-border: #282d37;
+    --key-shadow: #8d8778;
+
+    /* Accent & Brand Colors */
+    --retro-blue: #144299;
+    --retro-red: #c0392b;
+    --retro-green: #227a3a;
+    --retro-amber: #d97706;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: #1e242e;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    background-image: radial-gradient(rgba(30, 36, 46, 0.08) 1px, transparent 1px);
+    background-size: 16px 16px;
+  }
+}
+
+/* Retro Monospace Typography */
+.font-pixel {
+  font-family: 'Silkscreen', ui-monospace, 'Consolas', 'SF Mono', monospace;
+  letter-spacing: 0.04em;
+}
+
+.font-retro {
+  font-family: 'Silkscreen', ui-monospace, 'Consolas', 'SF Mono', monospace;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* Chunky Brutalist Retro Card Shadow */
+.retro-box-shadow {
+  box-shadow: 4px 4px 0px 0px #1e2229;
+}
+
+.retro-box-shadow-sm {
+  box-shadow: 2px 2px 0px 0px #1e2229;
+}
+
+.retro-box-shadow-hover {
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.retro-box-shadow-hover:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px #1e2229;
+}
+
+.retro-box-shadow-hover:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px #1e2229;
+}
+
+/* Dot-Matrix LCD Screen Effect */
+.lcd-dot-matrix {
+  background-color: var(--lcd-bg);
+  background-image: 
+    linear-gradient(rgba(20, 36, 16, 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20, 36, 16, 0.09) 1px, transparent 1px);
+  background-size: 3px 3px;
+  image-rendering: pixelated;
+}
+
+/* Retro Scanlines & Glass Lens Reflection */
+.lcd-scanlines::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.22) 0%,
+    rgba(255, 255, 255, 0.05) 30%,
+    transparent 50%
+  ),
+  repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.06),
+    rgba(0, 0, 0, 0.06) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+}
+
+/* Tactile Vintage Keypad Buttons */
+.tactile-key {
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: transform 70ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 70ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 0 0 var(--key-shadow), 0 5px 0 0 #1e2229;
+}
+
+.tactile-key:active,
+.tactile-key.active-press {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 0 var(--key-shadow), 0 2px 0 0 #1e2229;
+}
+
+/* Continuous Retro Marquee Banner */
+@keyframes retro-marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: retro-marquee 24s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+
+

@@ -1,0 +1,7 @@
+# RetroPocket Arcade - Robots Configuration
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://retropocket.app/sitemap.xml
+

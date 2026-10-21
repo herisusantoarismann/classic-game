@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <!-- RetroPocket Arcade - High-Contrast Micro Favicon (16px/32px/64px Optimized) -->
+  <defs>
+    <linearGradient id="favBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#184fb6" />
+      <stop offset="100%" stop-color="#103680" />
+    </linearGradient>
+  </defs>
+
+  <!-- Drop Shadow -->
+  <rect x="5" y="5" width="56" height="56" rx="14" fill="#1e2229" />
+
+  <!-- Outer Nokia Blue Chassis -->
+  <rect x="3" y="3" width="56" height="56" rx="13" fill="url(#favBlue)" stroke="#1e2229" stroke-width="2.5" />
+
+  <!-- LCD Screen Window -->
+  <rect x="9" y="8" width="46" height="34" rx="4" fill="#1e2229" />
+  <rect x="11" y="10" width="42" height="30" rx="2.5" fill="#879571" />
+
+  <!-- Bold Pixel Snake "R" Emblem (3x3 grid units, 3.5px each) -->
+  <g fill="#142410">
+    <!-- Spine -->
+    <rect x="16" y="14" width="4.5" height="4.5" />
+    <rect x="16" y="19" width="4.5" height="4.5" />
+    <rect x="16" y="24" width="4.5" height="4.5" />
+    <rect x="16" y="29" width="4.5" height="4.5" />
+    <rect x="16" y="34" width="4.5" height="4.5" /> <!-- Tail -->
+
+    <!-- Top Loop -->
+    <rect x="21" y="14" width="4.5" height="4.5" />
+    <rect x="26" y="14" width="4.5" height="4.5" />
+    <rect x="31" y="14" width="4.5" height="4.5" />
+    <rect x="31" y="19" width="4.5" height="4.5" />
+    <rect x="21" y="24" width="4.5" height="4.5" />
+    <rect x="26" y="24" width="4.5" height="4.5" />
+    <rect x="31" y="24" width="4.5" height="4.5" />
+
+    <!-- Snake Head & Leg -->
+    <rect x="26" y="29" width="4.5" height="4.5" />
+    <rect x="31" y="34" width="4.5" height="4.5" />
+
+    <!-- Apple Dot -->
+    <circle cx="43" cy="36" r="3" fill="#142410" />
+  </g>
+
+  <!-- Lower Keypad Anchor: Amber Gold Pip & Softkeys -->
+  <!-- Left & Right Softkey Lines -->
+  <rect x="11" y="47" width="10" height="4" rx="1.5" fill="#ded9cd" stroke="#1e2229" stroke-width="1.2" />
+  <rect x="43" y="47" width="10" height="4" rx="1.5" fill="#ded9cd" stroke="#1e2229" stroke-width="1.2" />
+
+  <!-- Center Gold Navi Pip -->
+  <circle cx="32" cy="49" r="6" fill="#1e2229" />
+  <circle cx="32" cy="48.5" r="4.5" fill="#ffd23f" stroke="#1e2229" stroke-width="1.5" />
+</svg>
