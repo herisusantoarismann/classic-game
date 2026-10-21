@@ -329,9 +329,9 @@ Untuk memastikan keandalan jangka panjang, aplikasi dilengkapi sistem penangkap 
 # 📚 Dokumentasi Lanjutan
 
 Untuk pembahasan teknis yang lebih mendalam, silakan pelajari dokumen arsitektur berikut:
-- 🏛️ [**docs/ARCHITECTURE.md**](file:///c:/Project/classic_game/docs/ARCHITECTURE.md): Kontrak engine, loop fisika delta-time, formula kalkulasi skor, dan sistem telemetri.
-- 🎨 [**docs/DESIGN_SYSTEM.md**](file:///c:/Project/classic_game/docs/DESIGN_SYSTEM.md): Desain token, palet casing hardware, rasio dot-matrix LCD, dan standar micro-interactions keypad.
-- 🗺️ [**docs/ROADMAP.md**](file:///c:/Project/classic_game/docs/ROADMAP.md): Catatan rilis dan roadmap 15 fase pengembangan RetroPocket Arcade.
+- 🏛️ [**docs/ARCHITECTURE.md**](docs/ARCHITECTURE.md): Kontrak engine, loop fisika delta-time, formula kalkulasi skor, dan sistem telemetri.
+- 🎨 [**docs/DESIGN_SYSTEM.md**](docs/DESIGN_SYSTEM.md): Desain token, palet casing hardware, rasio dot-matrix LCD, dan standar micro-interactions keypad.
+- 🗺️ [**docs/ROADMAP.md**](docs/ROADMAP.md): Catatan rilis dan roadmap 15 fase pengembangan RetroPocket Arcade.
 
 ---
 
